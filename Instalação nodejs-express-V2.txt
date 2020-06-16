@@ -1,0 +1,60 @@
+1-Instalando o nodejs (seguindo orientações do site do nodejs)
+
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+para confirmar se o nodejs foi instalado digite
+node -v 
+ou 
+nodejs -v
+
+Esse comnado vai mostrar a versão instalada no sistema
+
+Obs:Para instalar a versão mais recente mude o trecho da url "setup_6.x", exemplo: se a versão mais recente for a 7, o trecho fica assim "setup_7.x". Para ver a versão mais recente vá ao site do nodejs (https://nodejs.org)
+
+2- Instalando o modulos express no nodejs
+
+npm install -g express express-generator@4
+
+Pronto nodejs e express instalados.
+
+3- Criando uma API
+
+Na pasta onde se deseja criar a API digite
+
+express nome_da_api
+
+executado o comando, será criado uma pasta com o nome nome_da_api
+
+Com a pasta criada, entrar nela e instalar as dependências
+
+cd nome_da_api
+npm install
+
+Pronto a api esta concluida
+
+Para testa-la digite dentro da pasta da api o comando
+
+node bin/www
+
+e depois abra um navegador e na URl coloque localhost:3000
+
+se tudo estiver certo ira aparecer a mensagem "Welcome to Express"
+
+4- Instalando modulos na API
+
+Para que a API realize certas funções como por exemplo acesso ao banco de dados mysql é necessario instalar um modulo que ofereça essa função, para isso digite
+
+npm install -S nome_do_modulo
+
+Para a instalação do modulo mysql fica assim
+
+npm install -S mysql express-myconnection
+
+Fontes:
+https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+http://nicholasess.com.br/nodejs-2/criando-api-com-nodejs-e-mysql/
+
+
+
+

@@ -1,0 +1,31 @@
+comando instalação node js
+
+##site do nodejs (olhar a vesao atual no site e mudar na url - exemplo se for a 7 coloar na url setup_7.x )
+
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+##ver a versao do node instalada (e tambem ver se ele foi realmente instalado)
+
+node -v
+nodejs -v
+npm -v
+
+##instalando modulos express no node js
+
+npm install -g express express-generator@4
+
+##criando um projeto
+
+express nome_do_projeto
+
+##Instalando dependencias do projeto
+
+cd nome_do_projeto
+
+npm install
+
+## instalando modulos para conexão com banco de dados sql
+
+npm install -S mysql express-myconnection
+

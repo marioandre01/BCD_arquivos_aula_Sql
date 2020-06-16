@@ -1,0 +1,78 @@
+netcat -l 5000 > mysql.txt
+aluno@sj-labinf-36794:~$ cat mysql.txt
+
+cat .mysql_history | netcat 172.18.97.97 5000
+
+show databases;
+CREATE DATABASE bcd;
+show databases;
+use bcd;
+show tables
+;
+create table aluno (
+nome varchar [128],
+;
+create table aluno ( nome varchar [128],;
+create table aluno ( nome varchar[128]
+;
+create table aluno ( nome varchar[128],
+documento char[11],
+;
+create table aluno ( nome varchar[128], documento char[11],;
+create table aluno ( nome varchar[128], documento char[11] primary key,
+telefone bigint,
+email varchar[128];
+create table aluno ( nome varchar[128], documento char[11] primary key, telefone bigint, email varchar[128];
+show tables
+show tables bcd 
+desc aluno
+create table aluno ( nome varchar(128) not null, documento char(11) primary key, telefone bigint, email varchar(128) );
+show tables show tables bcd  desc aluno create table aluno ( nome varchar(128) not null, documento char(11) primary key, telefone bigint, email varchar(128) );
+desc aluno
+create table aluno ( nome varchar(128) not null, documento char(11) primary key, telefone bigint, email varchar(128) );
+desc aluno create table aluno ( nome varchar(128) not null, documento char(11) primary key, telefone bigint, email varchar(128) );
+create table aluno ( nome varchar(128) not null, documento char(11) primary key, telefone bigint, email varchar(128) );
+desc aluno
+;
+insert into aluno (nome, documento)
+values('Ederson Torresini','12345');
+insert into aluno (nome, documento) values('Ederson Torresini','12345');
+insert into aluno (nome, documento) values('Eraldo da Silveira e Silva','6789');
+select nome from aluno
+;
+select documento from aluno where nome regexp 'Ederson";
+select from aluno
+;
+select nome from aluno
+;
+select nome from aluno
+;
+insert into aluno (nome, documento) values('Ederson Torresini','12345');
+select nome from aluno;
+aaa;
+gt
+g
+;
+g
+show database
+;
+select nome from aluno
+;
+desc aluno
+.
+;
+show database
+;
+desc alnuo
+;
+use bcd;
+desc aluno;
+select nome from aluno;
+select * from aluno;
+update aluno set email = 'eraldo@ifsc.edu.br';
+select * from aluno;
+delete from aluno where documento regexp '45';
+select * from aluno;
+create table aluno ( nome varchar(128) not null, documento char(11) primary key, telefone bigint, email varchar(128) );
+
+

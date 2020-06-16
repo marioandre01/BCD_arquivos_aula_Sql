@@ -1,0 +1,8 @@
+Instalçao nodejs-express Versão Gustavo
+
+1- apt get update
+2- apt get install nodejs
+3- npm install express 
+4- mkdir gustavo/bcd20162/webserver/
+5- cd gustavo/bcd20162/webserver/
+6- npm install crypto ldapjs mysql body-parser

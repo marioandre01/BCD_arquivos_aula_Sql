@@ -1,0 +1,33 @@
+sudo apt update
+sudo apt install mysql-server mysql-client
+
+sudo su
+
+mysql
+show databases;
+CREATE DATABASE bcd;
+show databases;
+use bcd;
+show tables;
+create table aluno ( nome varchar(128) not null, documento char(11) primary key, telefone bigint, email varchar(128) );
+show tables;
+desc aluno;
+select nome from aluno;
+insert into aluno (nome, documento) values('Ederson Torresini','12345');
+select nome from aluno;
+select documento from aluno;
+select * from aluno;
+insert into aluno (nome, documento) values('Eraldo da Silveira e Silva','6789');
+select * from aluno;
+select documento from aluno where nome regexp "Ederson";
+update aluno set email = 'eraldo@ifsc.edu.br';
+select * from aluno;
+update aluno set email = 'boi@ifsc.edu.br' where nome regexp 'Ederson';
+delete from aluno where documento regexp '45';
+select * from aluno;
+drop table matricula;
+
+
+
+
+
